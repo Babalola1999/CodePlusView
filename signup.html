@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="shoesonflick.css" />
+    <!--cdn fontawesome-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5
+    .2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyV
+    X3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>smartwatches</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .top-of-page-container {
+        background-color: #c70039;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+      }
+      .getconnected {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: linear-gradient(90deg, #c70039 50%, white 50%);
+        padding: 5em 1em;
+        margin: 2em 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      @media (max-width: 800px) {
+        .getconnected {
+          flex-direction: column;
+          background-image: linear-gradient(180deg, #c70039 50%, white 50%);
+          padding: 2em 1em;
+        }
+      }
+      .signin-sideone,
+      .signin-sidetwo {
+        flex: 1;
+        padding: 2em;
+        box-sizing: border-box;
+      }
+      .signin-sideone {
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .signin-sideone h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+      }
+      .signin-sideone p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+      }
+      .signin-sideone button {
+        padding: 1em 2em;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .signin-sideone button:hover {
+        background-color: white;
+        color: #c70039;
+      }
+      .signin-sidetwo {
+        color: #c70039;
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .signin-sidetwo form {
+        display: flex;
+        flex-direction: column;
+      }
+      .signin-sidetwo h3 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+      }
+      .signin-sidetwo label {
+        margin: 0.5em 0 0.2em;
+        display: block;
+      }
+      .signin-sidetwo input {
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .signin-sidetwo button {
+        padding: 0.8em 1.5em;
+        background-color: #c70039;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .signin-sidetwo button:hover {
+        background-color: #a5002b;
+      }
+
+      select {
+        padding: 0.5rem 3.5rem;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 500px) {
+        .signin-sideone h1 {
+          font-size: 1.8em;
+        }
+        .signin-sideone p {
+          font-size: 1em;
+        }
+        .signin-sideone button {
+          padding: 0.8em 1.5em;
+        }
+        .signin-sidetwo h3 {
+          font-size: 1.5em;
+        }
+      }
+      @media (max-width: 300px) {
+        .signin-sideone h1 {
+          font-size: 1.4em;
+        }
+      }
+      @media (max-width: 300px) {
+        .signin-sideone button {
+          padding: 0.6em 1em;
+          width: max-content;
+          font-size: 0.7em;
+        }
+      }
+    </style>
+    <script defer src="shoesonflick.js"></script>
+  </head>
+  <body>
+    <header class="top-of-page-container">
+      <div class="container">
+        <div class="headers1">
+          <div class="logoname">
+            <div class="Brand-name"><strong>SHOES ON FLICK</strong></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="getconnected">
+          <div class="signin-sideone">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button type="button" onclick="gotoLogin()">
+              <strong>SIGN IN</strong>
+            </button>
+          </div>
+          <div class="signin-sidetwo">
+            <form action="#">
+              <div class="formField">
+                <h3>Create account New to shoesonflick?</h3>
+                <label for="First-name">First Name</label>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="name"
+                  id="name"
+                />
+
+                <div>
+                  <label for="gender">Gender</label>
+                  <select id="gender">
+                    <option id="male">Male</option>
+                    <option id="female">Female</option>
+                    <option id="other">Other</option>
+                  </select>
+                </div>
+
+                <label for="mobile-number">Mobile Number</label>
+                <input
+                  type="tel"
+                  placeholder="07068668078"
+                  class="tel"
+                  maxlength="11"
+                  id="telNum"
+                />
+
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="email"
+                  id="email"
+                  placeholder="youremail@email.com"
+                  required
+                />
+                <label for="password">Create a password</label>
+                <input
+                  type="password"
+                  class="password"
+                  id="password"
+                  placeholder="****"
+                  maxlength="8"
+                  required
+                />
+                <div>
+                  <button class="submit" onclick="saveData()" type="button">
+                    Submit
+                  </button>
+                  <button class="reset" type="reset" id="reset">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

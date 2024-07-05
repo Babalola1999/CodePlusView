@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="shoesonflick.css" />
+    <!--cdn fontawesome-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5
+    .2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyV
+    X3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- <script defer type="module" src="shopObject.js"></script> -->
+    <script defer  src="shoesonflick.js"></script>
+    <title>SHOESONFLICK</title>
+  </head>
+
+  <body>
+    <header class="top-of-page-container">
+      <div class="container">
+        <div class="headers1">
+          <div class="logoname">
+            <div class="Brand-name"><strong>SHOES ON FLICK</strong></div>
+          </div>
+
+          <div class="nav-icons">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <a href="#"><i class="bx bx-user"><h4><script>
+              document.write(localStorage.getItem("currentUserName"))
+            </script></h4></i></a>
+            <a class="cart-indicator" href="shoeonflickInCart.html"
+              ><i class="bx bx-cart"></i><span class="quantity">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--main page-->
+    <section class="mainview">
+      <div class="container">
+        <div class="header2">
+          <div class="logo">
+            <img src="images/shoelogo-removebg-preview.png" />
+          </div>
+          <nav>
+            <ul class="sidebar" id="sidebar">
+              <li onclick="hideSidebar()">
+                <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+              </li>
+              <li><a class="activelink active" href="#">Home</a></li>
+              <li><a class="activelink"href="signup.html">Sign Up</a></li>
+              <li><a class="activelink" href="#">Store</a></li>
+              <li><a class="activelink"href="userprofile.html">My profile</a></li>
+            </ul>
+            <ul class="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="userprofile.html">My profile</a></li>
+              <li onclick="showSidebar()">
+                <a href="#"><ion-icon class="showbar" name="menu-outline"></ion-icon></a>
+              </li>
+          </nav>
+        </div>
+        <div class="CONTENT">
+          <h2>Ready To <span>Rock</span></h2>
+          <a href="#" class="btn">Buy Now</a>
+          <img src="images/shoe9-removebg-preview.png" class="shoe9" />
+        </div>
+        <!--slider container-->
+        <div class="slider">
+          <div class="slides active">
+            <h2><span>Italian</span><br />Shoes</h2>
+            <h2><span>Durability</span><br />100%</h2>
+          </div>
+          <div class="slides">
+            <h2><span>Rock</span><br />Style</h2>
+            <h2><span>Comfort</span><br />100%</h2>
+          </div>
+          <div class="slides">
+            <h2><span>Quality</span><br />Leather</h2>
+            <h2><span>Leather peel</span><br />0%</h2>
+          </div>
+        </div>
+        <div class="footer">
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--shoe shop or container-->
+    <section class="shoe-shop">
+      <div class="Container">
+        <div class="label-name-on-italianshoe-cartoon">
+          <h2 class="shoe-title">ITALIAN SHOES</h2>
+        </div>
+
+        <!--beginning of italian shoe 4 in a cartoon-->
+        <div class="italianshoe-content">
+          <div class="italianshoe">
+            <img src="images/shoe4.jpg" alt="fineanakazo" />
+            <p>Lorem</p>
+            <span id="price"></span>
+            <button class="addcart" id="1">Add to Cart</button>
+          </div>
+          <!--2nd shoe in cartoon-->
+          <div class="italianshoe">
+            <img src="images/shoe5.jpg" alt="fine leather" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="1">Add to Cart</button>
+          </div>
+          <!--3rd shoe in cartoon-->
+          <div class="italianshoe">
+            <img src="images/shoe6.jpg" alt="strong" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="2">Add to cart</button>
+          </div>
+
+          <div class="italianshoe">
+            <img src="images/shoe7.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="3">Add to cart</button>
+          </div>
+          <!--end of 4th shoe in cartoon-->
+
+          <div class="italianshoe">
+            <img src="images/shoe8.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="4">Add to cart</button>
+          </div>
+
+          <div class="italianshoe">
+            <img src="images/shoe9.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="5">Add to cart</button>
+          </div>
+          <div class="italianshoe">
+            <img src="images/shoe10.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="6">Add to cart</button>
+          </div>
+          <div class="italianshoe">
+            <img src="images/shoe11.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="7">Add to cart</button>
+          </div>
+          <div class="italianshoe">
+            <img src="images/shoe12.jpg" />
+            <p>Lorem</p>
+            <span id="price">N0.00</span>
+            <button class="addcart" id="8">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- end of container-->
+
+      <!--The end single italian show cartoon containing 4 shoes-->
+    </section>
+    <!--end space for italian shoe-->
+    <section class="mainSections">
+      <div class="Container">
+        <div class="bulkitems">
+          <div class="bulkitem">
+            <h3>
+              <strong>Activities trackers and <br />smartwatches</strong>
+            </h3>
+            <img src="images/watch1.jpg" alt="" />
+            <a href="smartwatches.html"><strong>Shop now</strong></a>
+          </div>
+
+          <div class="bulkitem">
+            <h3>
+              <strong>Activities trackers and <br />smartwatches</strong>
+            </h3>
+            <img src="images/mainshoe2.jpg" alt="" />
+            <a href=""><strong>Shop now</strong></a>
+          </div>
+
+          <div class="bulkitem">
+            <h3>
+              <strong>Activities trackers and <br />smartwatches</strong>
+            </h3>
+            <img src="images/maincloth1.jpg" alt="" />
+            <a href=""><strong>Shop now</strong></a>
+          </div>
+
+          <div class="bulkitem">
+            <h3>
+              <strong>Activities trackers and <br />smartwatches</strong>
+            </h3>
+            <img src="images/mainshoe.jpg" alt="" />
+            <a href=""><strong>Shop now</strong></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--label  space in the shop for sneaker in one part of the shop-->
+
+    <!---Amazing gift for every dad-->
+    <section>
+      <div class="swiper mySwiper">
+        <div class="Container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="giftimg1">
+                <img src="images/gift4-removebg-preview.png" alt="" />
+                <img src="images/gift1.jpg" alt="" />
+                <img src="images/gift2-removebg-preview.png" alt="" />
+                <img src="images/gift3.jpg" alt="" />
+                <img src="images/gift4.png" alt="" />
+                <img src="images/shoe15-removebg-preview.png" alt="" />
+              </div>
+              <h1>
+                <strong>
+                  Amazing gifts<br />
+                  for every Dad
+                </strong>
+              </h1>
+              <div class="giftimg2">
+                <img src="images/singlet1.png" alt="" />
+                <img src="images/watch2-removebg-preview.png" alt="" />
+                <img src="images/boxers1.png" alt="" />
+                <img src="images/cloth12-removebg-preview.png" alt="" />
+                <img src="images/watch3-removebg-preview.png" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="giftimg1">
+                <img src="images/gift4-removebg-preview.png" alt="" />
+                <img src="images/gift1.jpg" alt="" />
+                <img src="images/gift2-removebg-preview.png" alt="" />
+                <img src="images/gift3.jpg" alt="" />
+                <img src="images/gift4.png" alt="" />
+                <img src="images/shoe15-removebg-preview.png" alt="" />
+              </div>
+              <h1>
+                <strong>
+                  Amazing gifts<br />
+                  for every Dad
+                </strong>
+              </h1>
+              <div class="giftimg2">
+                <img src="images/singlet1.png" alt="" />
+                <img src="images/watch2-removebg-preview.png" alt="" />
+                <img src="images/boxers1.png" alt="" />
+                <img src="images/cloth12-removebg-preview.png" alt="" />
+                <img src="images/watch3-removebg-preview.png" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="giftimg1">
+                <img src="images/gift4-removebg-preview.png" alt="" />
+                <img src="images/gift1.jpg" alt="" />
+                <img src="images/gift2-removebg-preview.png" alt="" />
+                <img src="images/gift3.jpg" alt="" />
+                <img src="images/gift4.png" alt="" />
+                <img src="images/shoe15-removebg-preview.png" alt="" />
+              </div>
+              <h1>
+                <strong>
+                  Amazing gifts<br />
+                  for every Dad
+                </strong>
+              </h1>
+              <div class="giftimg2">
+                <img src="images/singlet1.png" alt="" />
+                <img src="images/watch2-removebg-preview.png" alt="" />
+                <img src="images/boxers1.png" alt="" />
+                <img src="images/cloth12-removebg-preview.png" alt="" />
+                <img src="images/watch3-removebg-preview.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sneakers">
+      <div class="container">
+        <div class="sneakersection">
+          <h1 class="sneaker-title">SNEAKERS</h1>
+        </div>
+
+        <div class="ListProduct">
+          <div class="item">
+            <img src="images/sneaker1.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="9">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/sneaker2.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="10">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/sneaker3.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="11">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/sneaker4.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="12">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end space for sneakers in the shop-->
+
+    <section class="fancy-belt-container">
+      <div class="container">
+        <div class="belt-styles">
+          <div class="belt-text">
+            <h6>Mens</h6>
+            <h1>LUXURY <br />CLASSY</h1>
+            <h6>Belts</h6>
+          </div>
+          <div class="belt-img">
+            <img src="images/beltHeadee-removebg-preview.png" />
+          </div>
+          <div class="last-belt-word">
+            <h6>Italian Style Belt</h6>
+            <h2>Summer Sales</h2>
+            <h6>
+              Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.
+              Officia, vel omnis quasi <br />accusamus dolorem nemo sequ!
+            </h6>
+            <button class="">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="belt-container">
+      <div class="beltsection">
+        <h1 class="belt-title">MENS LUXIRIOUS BELT</h1>
+      </div>
+      <div class="container">
+        <div class="ListProduct">
+          <div class="item">
+            <img src="images/belt1.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="13">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/belt2.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="14">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/belt3.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="15">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/belt4.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="16">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/belt5.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="17">Add to cart</button>
+          </div>
+
+          <div class="item">
+            <img src="images/belt6.jpg" />
+            <h2>PRODUCT NAME</h2>
+            <div class="price">N1000</div>
+            <button class="addcart" id="18">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore">
+      <div class="container">
+        <div class="exploreText">
+          <h5>Explore more Executive Wears</h5>
+        </div>
+        <div class="wearsText">
+          <div class="wearsText1">
+            <h1>
+              <strong>It's party time -and <br />you're invited.</strong>
+            </h1>
+            <p>
+              Get 20% off, Whenever upon successful purchase,<br />
+              offer valid till May 30th,2024
+            </p>
+            <a href="exploreWears.html" class="toClaim">Claim your discount</a>
+          </div>
+
+          <img src="images/cloth1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="teir-container">
+      <div class="container">
+        <div class="teirsection">
+          <h1 class="teir-title">EXCLUSIVE TEIR</h1>
+        </div>
+
+        <div class="ListProduct-teir">
+          <div class="item1">
+            <img src="images/tie1-removebg-preview.png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="19">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="item2">
+            <img src="images/tie2-removebg-preview.png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="20">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="item3">
+            <img src="images/tie3-removebg-preview (1).png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="21">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="item4">
+            <img src="images/tie4-removebg-preview.png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="22">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="item5">
+            <img src="images/tie5-removebg-preview.png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="23">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="item6">
+            <img src="images/tie6-removebg-preview.png" />
+            <div class="teir-inner-text">
+              <h2>PRODUCT NAME</h2>
+              <div class="price">N1000</div>
+              <button class="addcart" id="24">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

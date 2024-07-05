@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="shoesonflick.css" />
+    <!--cdn fontawesome-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5
+    .2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyV
+    X3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>smartwatches</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .top-of-page-container {
+        background-color: #c70039;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+      }
+      .signin-sideone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2em;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 2em;
+      }
+      form {
+        width: 100%;
+        max-width: 400px;
+      }
+      form h2 {
+        margin-bottom: 1em;
+        font-size: 2em;
+        color: #c70039;
+      }
+      .formField {
+        display: flex;
+        flex-direction: column;
+      }
+      .formField h3 {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        color: #c70039;
+      }
+      .formField label {
+        margin-bottom: 0.5em;
+        font-size: 1em;
+        color: #666;
+      }
+      .formField input {
+        padding: 0.8em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      .formField button {
+        padding: 1em;
+        margin-top: 1em;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      .submit {
+        background-color: #c70039;
+        color: white;
+        transition: background-color 0.3s;
+      }
+      .submit:hover {
+        background-color: #a5002b;
+      }
+      .reset {
+        background-color: #f4f4f4;
+        color: #333;
+        transition: background-color 0.3s;
+      }
+      .reset:hover {
+        background-color: #e0e0e0;
+      }
+      @media (max-width: 768px) {
+        .signin-sideone {
+          padding: 1em;
+        }
+        form {
+          padding: 0 1em;
+        }
+      }
+      @media (max-width: 480px) {
+        form h2 {
+          font-size: 1.5em;
+        }
+        .formField h3 {
+          font-size: 1.2em;
+        }
+        .formField input {
+          padding: 0.6em;
+        }
+        .formField button {
+          padding: 0.8em;
+        }
+      }
+    </style>
+
+    <script defer src="shoesonflick.js"></script>
+  </head>
+  <body>
+    <header class="top-of-page-container">
+      <div class="container">
+        <div class="headers1">
+          <div class="logoname">
+            <div class="Brand-name"><strong>SHOES ON FLICK</strong></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="signin-sideone">
+          <form action="#">
+            <h2>Welcome Back!</h2>
+            <div class="formField">
+              <h3>Sign in Already a customer?</h3>
+              <label for="email">Email</label>
+              <input type="email" class="email" id="email" required />
+
+              <label for="password">Password</label>
+              <input type="password" class="password" id="password" required />
+
+              <div>
+                <button class="submit" onclick="saveLoginData()" type="button">
+                  Submit
+                </button>
+                <button class="reset" type="reset" id="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

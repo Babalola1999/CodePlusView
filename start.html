@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="shoesonflick.css" />
+    <!--cdn fontawesome-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5
+    .2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyV
+    X3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>smartwatches</title>
+    <script defer src="shoesonflick.js"></script>
+  </head>
+  <body>
+    <header class="top-of-page-container">
+      <div class="container">
+        <div class="headers1">
+          <div class="logoname">
+            <div class="Brand-name"><strong>SHOES ON FLICK</strong></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div>
+          <h2>Profile Page</h2>
+          <br />
+          <button onclick="logOut()" style="float: right">Log out</button>
+          <br />
+
+          <h1>Welcome</h1>
+          <h3>
+            Hi,
+            <script>
+              document.write(localStorage.getItem("currentUserName"));
+            </script>
+          </h3>
+          <br />
+          <h2>
+            Name :
+            <script>
+              document.write(localStorage.getItem("currentUserName"));
+            </script>
+          </h2>
+          <div>
+            <h2>
+              Gender :
+              <script>
+                document.write(localStorage.getItem("currentUserGender"));
+              </script>
+            </h2>
+          </div>
+
+          <div>
+            <h2>
+              Phone Number :
+              <script>
+                document.write(localStorage.getItem("currentUserTelNum"));
+              </script>
+            </h2>
+          </div>
+          <h2>
+            Email:
+            <script>
+              document.write(localStorage.getItem("currentUserEmail"));
+            </script>
+          </h2>
+          <br />
+          <div>
+            <h4>Profile Picture</h4>
+            <input type="file" id="profilePictureInput" accept="image/*" />
+            <br />
+            <img
+              id="profilePicture"
+              src=""
+              alt="Profile Picture"
+              style="
+                display: none;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+              "
+            />
+            <br />
+            <button onclick="deleteProfilePicture()">
+              Delete Profile Picture
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
